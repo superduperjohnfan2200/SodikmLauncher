@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="SodikmLauncher.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:SodikmLauncher" Title="SODIKM PREMIUM" Background="#2D2D2D" SizeToContent="WidthAndHeight" Height="Auto" Width="Auto" Margin="0" ResizeMode="CanMinimize" Icon="pack://application:,,,/Resources/Icon.ico" Loaded="Window_Loaded" Closed="Window_Closed">
+  <Grid Height="450" Width="400">
+    <Image HorizontalAlignment="Center" Height="50" Margin="0,10,0,0" VerticalAlignment="Top" Width="200" Source="pack://application:,,,/Resources/Logo.png" Stretch="Uniform" StretchDirection="Both" />
+    <TabControl Margin="10,120,10,10" Background="#FF000000" Foreground="#FF000000">
+      <TabItem Header="Client">
+        <Grid Background="#1E1E1E">
+          <ListBox Name="ClientList" Background="#1E1E1E" Foreground="#FFFFFFFF" BorderBrush="#FF000000" SelectionChanged="ClientList_SelectionChanged" />
+        </Grid>
+      </TabItem>
+      <TabItem Header="Map">
+        <Grid Background="#1E1E1E">
+          <ListBox Name="MapList" Background="#1E1E1E" Foreground="#FFFFFFFF" BorderBrush="#FF000000" />
+        </Grid>
+      </TabItem>
+      <TabItem Header="Character">
+        <Grid Background="#1E1E1E">
+          <Button Name="ColourButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,339,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/ColourIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="HatButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,309,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/HatIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="ShirtButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,279,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/ShirtIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="PantsButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,249,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/PantsIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="TShirtButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,219,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/TShirtIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="FaceButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,189,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/FaceIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="TorsoButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,159,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/TorsoIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="LeftArmButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,129,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/LeftArmIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="RightArmButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,99,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/RightArmIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="LeftLegButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,69,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/LeftLegIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="RightLegButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,39,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/RightLegIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Button Name="HeadButton" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,10,9,0" VerticalAlignment="Top" Width="25" Height="25">
+            <Image Source="pack://application:,,,/Resources/HeadIcon.png" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+          </Button>
+          <Label Name="SelectedCustomisation" Visibility="Hidden" Content="Color" HorizontalAlignment="Right" Margin="0,7,10,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" FontSize="16" FontWeight="Bold" />
+          <Grid Name="ColourGrid" Margin="0,40,0,0" Visibility="Visible">
+            <Button Name="ColourHead" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,25,267,0" VerticalAlignment="Top" Width="30" Height="30" />
+            <Button Name="ColourTorso" HorizontalAlignment="Left" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="67,60,0,0" VerticalAlignment="Top" Width="50" Height="60" />
+            <Button Name="ColourLeftArm" HorizontalAlignment="Left" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="37,60,0,0" VerticalAlignment="Top" Width="25" Height="60" />
+            <Button Name="ColourRightArm" HorizontalAlignment="Left" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="122,60,0,0" VerticalAlignment="Top" Width="25" Height="60" />
+            <Button Name="ColourLeftLeg" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,125,282,0" VerticalAlignment="Top" Width="25" Height="60" />
+            <Button Name="ColourRightLeg" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,125,257,0" VerticalAlignment="Top" Width="25" Height="60" />
+            <Button Name="ColourReset" Content="Reset" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,217,314,0" VerticalAlignment="Top" Width="50" Height="25" Click="ColourReset_Click" />
+            <ItemsControl Name="ColourSelection" Margin="187,0,0,0">
+              <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                  <WrapPanel />
+                </ItemsPanelTemplate>
+              </ItemsControl.ItemsPanel>
+              <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                  <Label Height="17" Width="17" Margin="2" Background="{Binding Value}" MouseDown="ColourSelectionItem_MouseDown" />
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          </Grid>
+          <Grid Name="HatGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="ShirtGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="PantsGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="TShirtGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="FaceGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="TorsoGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="LeftArmGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="RightArmGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="LeftLegGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="RightLegGrid" Margin="0,40,0,0" Visibility="Hidden" />
+          <Grid Name="HeadGrid" Margin="0,40,0,0" Visibility="Hidden" />
+        </Grid>
+      </TabItem>
+      <TabItem Header="Misc">
+        <Grid Background="#1E1E1E">
+          <CheckBox Name="WipeGamePersistenceCheckBox" Content="Wipe Game Persistence on Host" Foreground="#FFFFFFFF" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" IsChecked="True" Click="WipeGamePersistenceCheckBox_Click" />
+          <Button Name="ImportSOBLButton" Content="Import SOBL" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,257,92,0" VerticalAlignment="Top" Width="72" Height="25" Click="ImportSOBLButton_Click" />
+          <Button Name="ExportSOBLButton" Content="Export SOBL" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,257,10,0" VerticalAlignment="Top" Width="72" Height="25" Click="ExportSOBLButton_Click" />
+        </Grid>
+      </TabItem>
+      <TabItem Header="Experimental">
+        <Grid Background="#1E1E1E">
+          <Label Content="WARNING: These settings may make your Sodikm unstable!" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FFFF0000" />
+          <CheckBox Name="ProxyRequestsOnlyFromClient" Content="Proxy Requests Only From Client" Foreground="#FFFFFFFF" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" IsChecked="False" Click="ProxyRequestsFromClient_Click" />
+        </Grid>
+      </TabItem>
+    </TabControl>
+    <Label Content="The Future™" HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" />
+    <Button Name="JoinButton" Content="Join" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,86,120,0" VerticalAlignment="Top" Width="50" Height="25" Click="JoinButton_Click" />
+    <Button Name="HostButton" Content="Host" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,86,65,0" VerticalAlignment="Top" Width="50" Height="25" Click="HostButton_Click" />
+    <Button Name="StudioButton" Content="Studio" HorizontalAlignment="Right" BorderBrush="#FF000000" Background="#1E1E1E" Foreground="#FFFFFFFF" Margin="0,86,10,0" VerticalAlignment="Top" Width="50" Height="25" Click="StudioButton_Click" />
+    <Label Content="Username" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" />
+    <TextBox Name="UsernameBox" HorizontalAlignment="Left" BorderBrush="#FF000000" Background="#1E1E1E" Margin="16,90,0,0" TextWrapping="NoWrap" Text="NotMatt" VerticalAlignment="Top" Width="120" Foreground="#FFFFFFFF" TextChanged="UsernameBox_TextChanged" />
+    <Label Content="ID" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" />
+    <TextBox Name="IDBox" HorizontalAlignment="Left" BorderBrush="#FF000000" Background="#1E1E1E" Margin="16,55,0,0" TextWrapping="NoWrap" Text="1337" VerticalAlignment="Top" Width="80" Foreground="#FFFFFFFF" TextChanged="IDBox_TextChanged" />
+    <Label Content="IP" HorizontalAlignment="Left" Margin="304,5,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" />
+    <TextBox Name="IPBox" HorizontalAlignment="Left" BorderBrush="#FF000000" Background="#1E1E1E" Margin="310,26,0,0" TextWrapping="NoWrap" Text="localhost" VerticalAlignment="Top" Width="80" Foreground="#FFFFFFFF" TextChanged="IPBox_TextChanged" />
+    <Label Content="Port" HorizontalAlignment="Left" Margin="304,39,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" />
+    <TextBox Name="PortBox" HorizontalAlignment="Left" BorderBrush="#FF000000" Background="#1E1E1E" Margin="310,60,0,0" TextWrapping="NoWrap" Text="53640" VerticalAlignment="Top" Width="80" Foreground="#FFFFFFFF" TextChanged="PortBox_TextChanged" />
+  </Grid>
+</Window>

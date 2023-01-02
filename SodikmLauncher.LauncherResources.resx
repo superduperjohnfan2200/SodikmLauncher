@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="GameServerMiddleUrl"><value>http://www.roblox.com/game/gameservermiddle.ashx</value></data>
+  <data name="ClientsPath"><value>.\data\clients\</value></data>
+  <data name="JoinUrl"><value>http://www.roblox.com/game/join.ashx</value></data>
+  <data name="CustomisationSavePath"><value>.\data\csettings.json</value></data>
+  <data name="GameServerUrl"><value>http://www.roblox.com/game/gameserver.ashx</value></data>
+  <data name="BodyColoursTemplate"><value>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4"&gt;&lt;External&gt;null&lt;/External&gt;&lt;External&gt;nil&lt;/External&gt;&lt;Item class="BodyColors"&gt;&lt;Properties&gt;&lt;int name="HeadColor"&gt;{0}&lt;/int&gt;&lt;int name="LeftArmColor"&gt;{1}&lt;/int&gt;&lt;int name="LeftLegColor"&gt;{2}&lt;/int&gt;&lt;string name="Name"&gt;Body Colors&lt;/string&gt;&lt;int name="RightArmColor"&gt;{3}&lt;/int&gt;&lt;int name="RightLegColor"&gt;{4}&lt;/int&gt;&lt;int name="TorsoColor"&gt;{5}&lt;/int&gt;&lt;bool name="archivable"&gt;true&lt;/bool&gt;&lt;/Properties&gt;&lt;/Item&gt;&lt;/roblox&gt;</value></data>
+  <data name="MapsPath"><value>.\data\maps\</value></data>
+  <data name="ClientPath"><value>.\data\clients\{0}\</value></data>
+  <data name="ConfigName"><value>Sodikm.ini</value></data>
+  </root>
